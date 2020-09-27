@@ -1,0 +1,44 @@
+﻿<Window x:Class="Creatingpinusingcheckbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Creatingpinusingcheckbox"
+        mc:Ignorable="d"
+        Title="Creatingpinusingcheckbox 2" Height="204.902" Width="470.588">
+    <Grid HorizontalAlignment="Left" Width="463">
+        <CheckBox x:Name="checkBox1" Content="1" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Left" Margin="25,22,0,18"/>
+        <CheckBox x:Name="checkBox2" Content="2" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Left" Margin="92,22,0,18"/>
+        <CheckBox x:Name="checkBox3" Content="3" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Left" Margin="166,22,0,18"/>
+        <CheckBox x:Name="checkBox4" Content="4" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Center" Margin="25,74,392,76" Height="24" Width="46"/>
+        <CheckBox x:Name="checkBox5" Content="5" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Center" Margin="92,74,325,76" Height="24" Width="46"/>
+        <CheckBox x:Name="checkBox6" Content="6" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Center" Margin="166,74,251,76" Height="24" Width="46"/>
+        <CheckBox x:Name="checkBox7" Content="7" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Center" Margin="25,128,392,10" Width="46"/>
+        <CheckBox x:Name="checkBox8" Content="8" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Center" Margin="92,128,325,22" Height="24" Width="46"/>
+        <CheckBox x:Name="checkBox9" Content="9" Click="Feature_Chcked" Unchecked="cbFeature_CheckedChanged" HorizontalAlignment="Center" Margin="166,128,251,22" Height="24" Width="46"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Right" Margin="0,45,36,0" VerticalAlignment="Top" Width="201" Click="button1_Click"/>
+        <Button x:Name="button2" HorizontalAlignment="Left" Margin="226,90,0,0" VerticalAlignment="Top" Width="201" Click="button2_Click" Height="66">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="Check" Content="" RenderTransformOrigin="-0.898,0.523" Margin="-77,10,52,3" Grid.RowSpan="2">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Image/Check.png"/>
+                    </Label.Background>
+                </Label>
+                <Label x:Name="Wrong" Content="" RenderTransformOrigin="-0.898,0.523" Margin="-82,7,52,3" Grid.RowSpan="2">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Image/Wrong.png"/>
+                    </Label.Background>
+                </Label>
+                <Label Name="Answer" Margin="-40,7,-90,-8" RenderTransformOrigin="0.512,1.071" Grid.RowSpan="2">
+
+                </Label>
+            </Grid>
+
+        </Button>
+    </Grid>
+</Window>
